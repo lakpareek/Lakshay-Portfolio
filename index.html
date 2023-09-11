@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="Tailwind/main.css">
+
+
 
     <title>Lakshay's Portfolio</title>
 </head>
 <body>
-    <section><!--navbar-->
+
+    <section class="teeku"><!--navbar-->
         <div id="navbar" class="fixed top-0 left-0 right-0 navGrid bg-[#B7B94C] h-[114px] border-b-4 border-black z-50 max-[1279px]:hidden">
             <div class="flex flex-row justify-start m-4 text-4xl items-center relative gap-10">
                 <a class="font-bold" href="#home-sec">HOME</a>
-                <a class="font-bold" href="#">BLOG</a>
+                <a class="font-bold" href="#about-sec">ABOUT</a>
                 <a class="font-bold" href="#proj-sec">PROJECTS</a>
                 <a class="font-bold" href="#cont-me">CONTACT ME</a>
             </div>
             <div></div>
-            <a href="https://docs.google.com/document/d/1Sl5lzt-LLcJgJwX55kU4VMpf0Hl86yp7/edit?usp=sharing&ouid=101189956616699820989&rtpof=true&sd=true" class="h-[65px] w-[260px] flex justify-center items-center mt-[22px] rounded-full border-2 border-black bg-[#DBDF17] dbtn">
+            <a href="https://drive.google.com/file/d/1pTfbA3HLWuTPDZ3M9l1esqrqnDfEgERg/view?usp=sharing" class="h-[65px] w-[260px] flex justify-center items-center mt-[22px] rounded-full border-2 border-black bg-[#DBDF17] dbtn">
                 <div class="grid grid-flow-row row-end-2">
                     <p class="flex flex-row justify-center font-medium ">Download Resume</p>
                     <div class="flex flex-row justify-center"><img src="./images/material-symbols_download-for-offline.svg" alt="dwnld-btn"></div>
@@ -47,32 +51,24 @@
             </div>
         </div>
     </section>
+    <!--ABOUT-->
+    <section id="about-sec" class="h-[500px] flex justify-center items-center flex-col" style="padding-left: 45px; padding-right: 45px; padding-bottom: 45px; margin-bottom: 100px; margin-top: 30px;">
+        <h2 class="font-bold text-[58px] mb-[60px] max-[1279px]:text-[34px]" style="margin: 20px;">Who am I?</h2>
+        <p class="text-center meeku">I'm a dedicated MERN (MongoDB, Express, React, Node.js) developer with a passion for crafting seamless web applications that provide exceptional user experiences. My journey in web development started with a fascination for turning code into beautiful, interactive websites. I've spent countless hours honing my skills, staying updated with industry trends, and collaborating on diverse projects that have expanded my expertise. I thrive on challenges, and I believe in clean, maintainable code that fosters scalability and adaptability.</p>
+        <p class="text-center meeku";>My commitment to delivering high-quality results, combined with my love for problem-solving and open communication, makes me a valuable addition to any development team. Let's work together to turn your web development ideas into reality. Reach out to me at my email to start a conversation about your next project.</p>
+    </section>
+    <section class="eeku kuk">
+        <a href="https://drive.google.com/file/d/1pTfbA3HLWuTPDZ3M9l1esqrqnDfEgERg/view?usp=sharing" class="h-[65px] w-[260px] flex justify-center items-center rounded-full border-2 border-black bg-[#DBDF17] dbtn">
+            <div class="grid grid-flow-row row-end-2">
+                <p class="flex flex-row justify-center font-medium ">Download Resume</p>
+                <div class="flex flex-row justify-center"><img src="./images/material-symbols_download-for-offline.svg" alt="dwnld-btn"></div>
+            </div>
+        </a>
+    </section>
     <!--PROJECTss-->
-    <section id="proj-sec" class="h-[1500px]">
+    <section id="proj-sec" class="h-[1500px] relative top-4">
         <div class="flex justify-center"><p class="font-bold text-[58px] mb-[60px] max-[1279px]:text-[34px]">SELECTED WORKS</p></div>
         <div class="briddle xl:briddle2 flex flex-row justify-center">
-            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
-                <a href="https://lakpareek.github.io/html-portfolio/">
-                    <img class="h-[118.8px] w-[200px] xl:h-[235px] flex justify-center xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black lboxshad niq2" src="./images/htmport.png" alt="xyz">
-                </a>
-                <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:right-[155px] xl:top-[45px] z-[-1]">
-                    <div class="xl:absolute xl:left-[84px]">
-                        <h2 class="text-center xl:ml-[70px] font-bold xl:text-[46px] xl:text-left">HTML Portfolio</h2>
-                        <p class="text-center xl:ml-[70px] font-light xl:text-left">Made a HTML Portfolio</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
-                <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:left-[155px] xl:top-[45px] z-[-1] order-2 xl:order-1">
-                    <div class="xl:absolute xl:right-[84px]">
-                        <h2 class="text-center xl:mr-[70px] font-bold xl:text-[46px] xl:text-right">TinDog</h2>
-                        <p class="text-center xl:mr-[70px] font-light xl:text-right">Made a Landing page using Bootstrap</p>
-                    </div>
-                </div>
-                <a href="https://lakpareek.github.io/tindog2/" class="order-1 xl:order-2">
-                    <img class="h-[118.8px] w-[200px] xl:h-[235px] xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black rboxshad niq1 xl:niq1" src="./images/tinda.png" alt="xyz">
-                </a>
-            </div>
             <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
                 <a href="https://lakpareek.github.io/Simon-Game/">
                     <img class="h-[118.8px] w-[200px] xl:h-[235px] flex justify-center xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black lboxshad niq2" src="./images/simgame2.png" alt="xyz">
@@ -80,22 +76,45 @@
                 <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:right-[155px] xl:top-[45px] z-[-1]">
                     <div class="xl:absolute xl:left-[84px]">
                         <h2 class="text-center xl:ml-[70px] font-bold xl:text-[46px] xl:text-left">Simon Game</h2>
-                        <p class="text-center xl:ml-[70px] font-light xl:text-left">Made a Simon Game with jQuery</p>
+                        <p class="text-center xl:ml-[70px] font-light xl:text-left">Made a Simon Game using jQuery</p>
                     </div>
                 </div>
             </div>
             <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
                 <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:left-[155px] xl:top-[45px] z-[-1] order-2 xl:order-1">
                     <div class="xl:absolute xl:right-[84px]">
-                        <h2 class="text-center xl:mr-[70px] font-bold xl:text-[46px] xl:text-right">SafeZone</h2>
-                        <p class="text-center xl:mr-[70px] font-light xl:text-right">Made a women safety app for a hackathon</p>
+                        <h2 class="text-center xl:mr-[70px] font-bold xl:text-[46px] xl:text-right">To-Do List</h2>
+                        <p class="text-center xl:mr-[70px] font-light xl:text-right">Made a To-Do List app using Express.js</p>
                     </div>
                 </div>
-                <a href="https://lakpareek.github.io/SafeZone2/" class="order-1 xl:order-2">
-                    <img class="h-[118.8px] w-[200px] xl:h-[235px] xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black rboxshad niq1" src="./images/sz2.png" alt="xyz">
+                <a href="http://to-do-list-ouqg.onrender.com/" class="order-1 xl:order-2">
+                    <img class="h-[118.8px] w-[200px] xl:h-[235px] xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black rboxshad niq1 xl:niq1" src="./images/tdl.png" alt="xyz">
+                </a>
+            </div>
+            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
+                <a href="https://lakpareek.github.io/Typing-analyzer/">
+                    <img class="h-[118.8px] w-[200px] xl:h-[235px] flex justify-center xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black lboxshad niq2" src="./images/TPM.png" alt="xyz">
+                </a>
+                <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:right-[155px] xl:top-[45px] z-[-1]">
+                    <div class="xl:absolute xl:left-[84px]">
+                        <h2 class="text-center xl:ml-[70px] font-bold xl:text-[46px] xl:text-left">Typing-Master</h2>
+                        <p class="text-center xl:ml-[70px] font-light xl:text-left">A Web app that tells you your typing speed and accuracy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
+                <div class="h-[90px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:left-[155px] xl:top-[45px] z-[-1] order-2 xl:order-1">
+                    <div class="xl:absolute xl:right-[84px]">
+                        <h2 class="text-center xl:mr-[70px] font-bold xl:text-[46px] xl:text-right">YTPL Calculator</h2>
+                        <p class="text-center xl:mr-[70px] font-light xl:text-right">YTPL Calculator or YouTube Playlist length calculator uses express, axios and Youtube's API to calculate playlist length</p>
+                    </div>
+                </div>
+                <a href="https://yt-playlist-length-ktf4.onrender.com" class="order-1 xl:order-2">
+                    <img class="h-[118.8px] w-[200px] xl:h-[235px] xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black rboxshad niq1" src="./images/ytpl.png" alt="xyz">
                 </a>
             </div>
         </div>
+        <div class="kuk text-center"><p>To see more cool stuff I've made check out my <u><a href="https://github.com/lakpareek">GitHub</a></u> </p></div>
     </section>
     <!--FOOTER-->
     <section id="cont-me">
@@ -151,3 +170,4 @@
         </div>
     </section>
 -->
+
