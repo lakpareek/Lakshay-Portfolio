@@ -43,14 +43,14 @@ a:hover{
 }
 @media (max-width: 1279px) {
     .lboxshad {
-      box-shadow: -8px 8px black; /* Adjust the left shadow for small screens */
+      box-shadow: -8px 8px black; 
     }
   
     .rboxshad {
-      box-shadow: -8px 8px black; /* Adjust the right shadow for small screens */
+      box-shadow: -8px 8px black;
     }
   
-    /* Revert the hover styles for shadows for smaller screens */
+
     .niq1:hover,
     .niq2:hover {
         box-shadow: 0px 0px black;
@@ -71,7 +71,7 @@ a:hover{
 
 .projectGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with auto width (adjust as needed) */
+    grid-template-columns: 1fr 1fr; 
     gap: 10px; 
 }
 
@@ -115,7 +115,7 @@ a:hover{
 
   #navbar {
 
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    transition: top 0.3s; 
   }
 
   .briddle{
@@ -128,5 +128,34 @@ a:hover{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 0.2fr 1fr 0.2fr;
+  }
+
+
+  .meeku {
+    font-size: 20px; 
+  
+    @media (max-width: 1279px) {
+      font-size: 12px;
+    }
+  }
+  .teeku {
+    
+    @media (max-width: 1279px) {
+      display: none;
+    }
+  }
+
+  .eeku {
+    
+    @media (min-width: 1279px) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  
+  .kuk{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
   }
   
